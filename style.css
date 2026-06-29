@@ -50,6 +50,13 @@ body{
     cursor:pointer;
 }
 
+.menu-icon img{
+  width:22px;
+  height:22px;
+  object-fit:contain;
+  display:block;
+}
+
 /* HERO */
 
 .hero{
@@ -575,4 +582,247 @@ body{
 .social-icons a{
     color:white;
     font-size:22px;
+}
+
+
+/* MOBILE VIEW */
+@media (max-width: 768px){
+
+  .navbar{
+    height:44px;
+    padding:0 22px;
+  }
+
+  .logo{
+    width:72px;
+  }
+
+  .logo img{
+    width:100%;
+  }
+
+  .nav-links,
+  .contact-btn{
+    display:none;
+  }
+
+  .menu-icon{
+    display:block;
+  }
+
+  .hero{
+    min-height:430px;
+    padding:55px 22px 38px;
+  }
+
+  .hero h1{
+    font-size:31px;
+    line-height:1.35;
+    letter-spacing:-2.5px;
+  }
+
+  .hero p{
+    font-size:14px;
+    line-height:1.55;
+    margin-top:24px;
+  }
+
+  .hero-buttons{
+    width:100%;
+    flex-direction:column;
+    gap:8px;
+    margin-top:28px;
+  }
+
+  .hero-buttons button{
+    width:100%;
+    height:39px;
+    font-size:12px;
+    border-radius:7px;
+  }
+
+  .secondary img,
+  .cta-secondary img{
+    width:14px;
+    height:14px;
+  }
+
+  .governance{
+    padding:32px 10px 30px;
+  }
+
+  .section-title{
+    margin-bottom:28px;
+  }
+
+  .section-title h2{
+    font-size:25px;
+    line-height:1.18;
+    letter-spacing:-1.5px;
+  }
+
+  .section-title p{
+    font-size:11px;
+    line-height:1.75;
+  }
+
+  .feature-grid{
+    grid-template-columns:1fr;
+    border-radius:7px;
+  }
+
+  .feature-card{
+    min-height:auto;
+    padding:24px 16px;
+    border-right:none;
+    border-bottom:1px solid #e6e6e6;
+  }
+
+  .feature-card:nth-child(n+4){
+    border-bottom:1px solid #e6e6e6;
+  }
+
+  .feature-card:last-child{
+    border-bottom:none;
+  }
+
+  .feature-card h3{
+    font-size:11px;
+    margin-bottom:14px;
+  }
+
+  .feature-card p{
+    font-size:10px;
+    line-height:1.65;
+  }
+
+  .icon{
+    margin-bottom:12px;
+  }
+
+  .icon img{
+    width:16px;
+  }
+
+  .admin-section{
+    padding:45px 10px 35px;
+  }
+
+  .admin-section h2{
+    font-size:24px;
+    line-height:1.15;
+    letter-spacing:-1.2px;
+    margin-bottom:48px;
+  }
+
+  .admin-grid{
+    display:block;
+  }
+
+  .admin-img{
+    display:none;
+  }
+
+  .admin-text{
+    margin-bottom:48px;
+  }
+
+  .admin-text h3{
+    font-size:16px;
+    letter-spacing:-.5px;
+    margin-bottom:22px;
+  }
+
+  .admin-text p{
+    font-size:11px;
+    line-height:1.65;
+    margin-bottom:22px;
+  }
+
+  .admin-text li{
+    font-size:10px;
+    padding:13px 0 13px 28px;
+    white-space:normal;
+  }
+
+  .admin-text li img{
+    width:14px;
+    height:14px;
+    top:14px;
+  }
+
+  .steps-section{
+    padding:28px 0 45px;
+  }
+
+  .steps-section h2{
+    font-size:20px;
+    text-align:left;
+    padding-left:12px;
+    margin-bottom:32px;
+    letter-spacing:-1px;
+  }
+
+  .steps-box{
+    grid-template-columns:1fr;
+    gap:44px;
+    padding:26px 20px 34px;
+    border-radius:7px;
+    border-top:5px solid #e5e5e5;
+  }
+
+  .step-card span{
+    width:23px;
+    height:23px;
+    font-size:10px;
+    margin-bottom:24px;
+  }
+
+  .step-card h3{
+    font-size:12px;
+    margin-bottom:18px;
+  }
+
+  .step-card p{
+    font-size:10px;
+    line-height:1.7;
+  }
+
+  .cta-section{
+    padding:48px 13px 60px;
+  }
+
+  .cta-box{
+    border-radius:8px;
+    padding:36px 17px 38px;
+  }
+
+  .cta-box h2{
+    font-size:24px;
+    line-height:1.25;
+    letter-spacing:-1px;
+  }
+
+  .cta-box p{
+    font-size:14px;
+    line-height:1.45;
+    margin-bottom:24px;
+  }
+
+  .cta-buttons{
+    flex-direction:column;
+    gap:7px;
+  }
+
+  .cta-primary,
+  .cta-secondary{
+    width:100%;
+    height:35px;
+    font-size:11px;
+    border-radius:6px;
+  }
+
+  .footer{
+    display:none;
+  }
 }
